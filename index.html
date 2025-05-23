@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>لعبة الأسئلة مع عداد يدوي</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>لعبة الأسئلة</h1>
+
+  <div class="score-board">
+    <button onclick="addPoint(1)">+1 نقطة للفريق الأزرق</button>
+    <button onclick="addPoint(2)">+1 نقطة للفريق الأحمر</button>
+    <div>
+      <span id="team1">فريق أزرق: 0</span> |
+      <span id="team2">فريق أحمر: 0</span>
+    </div>
+  </div>
+
+  <div class="questions-container">
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">1</div>
+      <div class="content">ما هي عاصمة السعودية؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">2</div>
+      <div class="content">ما هي عاصمة الإمارات العربية المتحدة؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">3</div>
+      <div class="content">ما هي عاصمة المغرب؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">4</div>
+      <div class="content">ما هي عاصمة الجزائر؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">5</div>
+      <div class="content">ما هي عاصمة العراق؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">6</div>
+      <div class="content">ما هي عاصمة الأردن؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">7</div>
+      <div class="content">ما هي عاصمة لبنان؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">8</div>
+      <div class="content">ما هي عاصمة تونس؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">9</div>
+      <div class="content">ما هي عاصمة عُمان؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">10</div>
+      <div class="content">ما هي عاصمة قطر؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">11</div>
+      <div class="content">ما هي عاصمة الكويت؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">12</div>
+      <div class="content">ما هي عاصمة اليمن؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">13</div>
+      <div class="content">ما هي عاصمة فلسطين؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">14</div>
+      <div class="content">ما هي عاصمة ليبيا؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">15</div>
+      <div class="content">ما هي عاصمة السودان؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">16</div>
+      <div class="content">ما هي عاصمة الصومال؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">17</div>
+      <div class="content">ما هي عاصمة موريتانيا؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">18</div>
+      <div class="content">ما هي عاصمة جيبوتي؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">19</div>
+      <div class="content">ما هي عاصمة جزر القمر؟</div>
+    </div>
+    <div class="question" onclick="reveal(this)">
+      <div class="cover">20</div>
+      <div class="content">ما هي عاصمة البحرين؟</div>
+    </div>
+  </div>
+
+  <div id="winner" class="winner"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
